@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda de contatos</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+</head>
+<body>
+
+    <div class="container-fluid">
+        <!-- Cabeçalho do sistema -->
+        <div class="row">
+            <div class="col-12">
+                <div class="alert alert-primary mt-3">
+                    <h1 class="text-dark text-center">
+                        AGENDA DE CONTATOS
+                    </h1>
+                </div>
+            </div>
+        </div>
+        <!-- Fim do cabeçalho do sistema -->
+
+        <div class="row">
+            <!-- Menu do sistema -->
+            <div class="col-12 col-sm-3 col-md-2">
+                <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                    <a class="nav-link active" data-toggle="pill" role="tab" aria-selected="true">Home</a>
+                    <a class="nav-link" data-toggle="pill" href="assets/contato/view/list.html" role="tab" aria-selected="false">Listagem</a>
+                    <a class="nav-link" data-toggle="pill" href="assets/contato/view/form.html" role="tab" aria-selected="false">Cadastro</a>
+                    <a class="nav-link" data-toggle="pill" href="" role="tab" aria-selected="false">Atualização</a>
+                  </div>
+            </div>
+            <!-- Fim do menu -->
+
+            <!-- Sessão do conteúdo dinâmico do sistema -->
+            <div id="content" class="col-12 col-sm-9 col-md-10">
+                <h1 class="text-center text-primary mt-5 p-3">
+                    Seja bem vindo a sua agenda de contatos.
+                </h1>
+            </div>
+            <!-- Fim do conteúdo dinâmico -->
+        </div>
+    </div>
+    
+
+    <script src="assets/js/jquery-3.6.4.js"></script>
+    <script src="assets/js/bootstrap.js"></script>
+    <script src="assets/js/menu.js"></script>
+</body>
+</html>
