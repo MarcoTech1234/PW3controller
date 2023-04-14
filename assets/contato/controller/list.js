@@ -14,13 +14,14 @@ $(document).ready(function(){
                 <td class="text-center">${result.TELEFONE}</td>
                 <td class="text-left">${result.EMAIL}</td>
                 <td class="text-center">
-                    <span class="badge badge-primary">Visualizar</span>
-                    <span class="badge badge-warning">Editar</span>
-                    <span class="badge badge-danger">Excluir</span>
+                    <button id="${result.ID}" class="btn btn-info btn-edit">Editar</button>
+                    <button id="${result.ID}" class="btn btn-danger btn-delete">Excluir</button>
                 </td>
             </tr>
             `)
             }
+            $('body').append(`<script src="assets/contato/controller/view.js"></script>`)
+            $('body').append(`<script src="assets/contato/controller/delete.js"></script>`)
         }
     })
 })
